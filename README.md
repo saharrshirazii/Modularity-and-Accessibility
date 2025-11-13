@@ -1,5 +1,4 @@
 # Modularity-and-Accessibility
-Modularity and Accessibility
 
 # Build an Interactive Product List with API and Modular Structure
 
@@ -15,11 +14,11 @@ The project should be divided into several modules and follow basic UX/UI princi
 
 - Create a simple page with:
 
- - A headline (<h1>).
+ - A headline <h1>.
 
  - A search field to filter products.
 
- - A section for product cards (e.g. <div id="productList">).
+ - A section for product cards e.g. <div id="productList">.
 
 - Use CSS to create a clear and consistent design (simple color scheme, spacing between cards, clear typography).
 
