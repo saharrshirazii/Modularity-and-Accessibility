@@ -100,3 +100,19 @@ body {
 #productModal p {
   margin: 0.25rem 0;
 }
+
+/* loading */
+.loading {
+  text-align: center;
+  font-size: 1.2rem;
+  color: var(--able-gray-20);
+  padding: 2rem 0;
+}
+
+/* error message */
+.error-message {
+  text-align: center;
+  font-size: 1.2rem;
+  color: red;
+  padding: 2rem 0;
+}

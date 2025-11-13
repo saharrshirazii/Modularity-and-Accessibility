@@ -1,7 +1,8 @@
+ //products
  export function showProducts(products) {
  const productList = document.getElementById("productList");
  productList.innerHTML= "";
- 
+
  products.forEach(product => {
     const card = document.createElement("div");
     card.className = "product-card";
@@ -12,18 +13,19 @@
  
 
     card.addEventListener("click", ()=>{
-    console.log("clicked on:", product.title);
+    
+    ProductDetails(product);
+    hideDetails(product);
+
     });
 
     productList.appendChild(card);
 
 });
-
-
  
 }
-
-export function ProductDetails(products) {
+//products detalis 
+export function ProductDetails(product) {
     const modal = document.getElementById("productModal");
     modal.innerHTML = `
     <img src="${product.image}" alt="${product.title}">
@@ -38,29 +40,30 @@ export function ProductDetails(products) {
 
 
 
-// export function showLoading() {
-//     const productList = document.querySelector("#productList");
-//     const p = document.createElement("p");
-//     p.className = "loading";
-//     p.textContent = "Something is loading ...";
-//     productList.appendChild(p);
+export function showLoading() {
+    const productList = document.querySelector("#productList");
+    const p = document.createElement("p");
+    p.className = "loading";
+    p.textContent = "loading ...";
+    productList.appendChild(p);
 
-// }
+}
 
-// export function hideLoading() {
-//     const productList = document.querySelector("#productList");
-//     const loading = productList.querySelector(".loading");
-//     if (loading) loading.remove();
-// }
-// export function showError(message) {
-//     const productList = document.querySelector("#productList");
-//     productList.innerHTML = `<p class="error">${message}</p>`;
-// }
 
-// export function showProducts(){
 
-// }
+export function showError(message) {
+    const productList = document.querySelector("#productList");
+     productList.innerHTML = "";
+     const p = document.createElement("p");
+     p.className = "error-message";
+     p.textContent = message;
+     productList.appendChild(p);
 
-// export function showProductDetails(){
+}
+
+// export function hideDetails(product){
+//   const productList = document.querySelector("#productList");
+//   productList.innerHTML = ""; 
+  
 
 // }
