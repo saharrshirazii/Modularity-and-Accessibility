@@ -15,7 +15,7 @@
     card.addEventListener("click", ()=>{
     
     ProductDetails(product);
-    hideDetails(product);
+    // hideDetails(product);
 
     });
 
@@ -37,6 +37,11 @@ export function ProductDetails(product) {
       modal.scrollIntoView({ behavior: "smooth" });
 
 }
+
+// export function hideDetails(product){
+//   const productList = document.querySelector("#productList");
+//   productList.innerHTML = ""; 
+// }
 
 
 
@@ -61,9 +66,3 @@ export function showError(message) {
 
 }
 
-// export function hideDetails(product){
-//   const productList = document.querySelector("#productList");
-//   productList.innerHTML = ""; 
-  
-
-// }
