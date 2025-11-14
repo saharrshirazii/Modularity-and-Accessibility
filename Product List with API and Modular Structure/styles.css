@@ -5,6 +5,7 @@
   --able-gray-30: #3c3c3c;
   --able-gray-40: #484848;
   --able-gray-50: #d1d1d1;
+  --able-gray-60: #fff;
 
   /* Text */
   --able-text: #eeeeee;
@@ -28,12 +29,32 @@
 
 body {
   font-family: Jost;
-  background-color: var(--able-gray-50);
+  background-color: var(--able-gray-30);
+}
+
+h1{
+  color: var(--able-gray-60);
+  text-align: center;
+  margin-top: 20px;
+}
+
+input{
+  border: none;
+  outline: none;
+  font-size: 1rem;
+  border-radius: 50px;
+  height: 30px;
+  width: 300px;
+
+  display: block; 
+  margin: 0 auto;  
+  text-align: center;
+
 }
 
 .product-list{
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 1rem;
   padding: 1rem;
 }
@@ -81,7 +102,6 @@ body {
   margin: 2rem auto;
   padding: 1.5rem;
   max-width: 800px;
-  background: #f9f9f9;
   border-radius: 10px;
   box-shadow: 0 2px 8px rgba(0,0,0,0.1);
 }
@@ -113,6 +133,6 @@ body {
 .error-message {
   text-align: center;
   font-size: 1.2rem;
-  color: red;
+  color: var( --able-fuchsia-tom);
   padding: 2rem 0;
 }

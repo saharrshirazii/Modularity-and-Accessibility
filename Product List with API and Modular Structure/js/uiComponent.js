@@ -27,6 +27,7 @@
 //products detalis 
 export function ProductDetails(product) {
     const modal = document.getElementById("productModal");
+    modal.style.backgroundColor="white";
     modal.innerHTML = `
     <img src="${product.image}" alt="${product.title}">
     <h2>${product.title}</h2>
