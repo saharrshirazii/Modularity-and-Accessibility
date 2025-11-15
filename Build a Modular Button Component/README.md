@@ -16,7 +16,7 @@ Understand how to create and use your own JavaScript modules and components.
   main.js<br>
 index.html
 
-2. In button.js, create and export a function called
+2. In **button.js**, create and export a function called
  createButton(label, onClick) that:
 - Creates a `<button>` element
 
@@ -35,7 +35,7 @@ index.html
   return button;<br>
 }
 
-3. In main.js, import the function and create three buttons:
+3. In **main.js**, import the function and create three buttons:
 
 - **“Hello World”** → shows an alert message
 
@@ -45,7 +45,7 @@ index.html
 
 4. Add the buttons to the document.body.
 
-5. Test that all logic works and that no JavaScript code is written directly inside index.html.
+5. Test that all logic works and that no JavaScript code is written directly inside **index.html**.
 
 
 ## Goals
