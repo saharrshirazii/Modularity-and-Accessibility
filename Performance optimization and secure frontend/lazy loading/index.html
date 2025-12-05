@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="sv">
+
+<head>
+	<meta charset="UTF-8" />
+	<title>Image Gallery</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link rel="stylesheet" href="styles.css" />
+	<script src="script.js" defer></script>
+</head>
+
+<body>
+	<header class="site-header">
+		<h1>Performance demo: image gallery</h1>
+		<p>
+			We will optimize this page with lazy loading and responsive images.
+		</p>
+	</header>
+
+	<main>
+		<section class="hero">
+			<h2>Hero Image</h2>
+			<p>This is a large image that the user sees immediately when the page loads.</p>
+
+			<img id="hero-image" src="https://picsum.photos/id/14/800/400.webp" srcset="
+				https://picsum.photos/id/15/600/300 600w,
+				https://picsum.photos/id/16/800/400 800w,
+				https://picsum.photos/id/17/1200/600.webp 1200w
+				" sizes="(max-width: 600px) 100vw, 960px" alt="Landscape with mountains and lake" />
+
+		</section>
+
+		<section class="gallery">
+			<h2>Gallery with many pictures</h2>
+			<p>Scroll down for see more images.</p>
+
+			<div class="gallery-grid">
+				<img class="gallery-image" src="https://picsum.photos/id/1025/800/600" alt="Image 1 hund"
+					loading="lazy" />
+				<img class="gallery-image" src="https://picsum.photos/id/1035/800/600" alt="Image 2 landskap"
+					loading="lazy" />
+				<img class="gallery-image" src="https://picsum.photos/id/1041/800/600" alt="Image 3 natur"
+					loading="lazy" />
+				<img class="gallery-image" src="https://picsum.photos/id/1050/800/600" alt="Image 4 skog"
+					loading="lazy" />
+				<img class="gallery-image" src="https://picsum.photos/id/1062/800/600" alt="Image 5 berg"
+					loading="lazy" />
+				<img class="gallery-image" src="https://picsum.photos/id/1074/800/600" alt="Image 6 vatten"
+					loading="lazy" />
+				<img class="gallery-image" src="https://picsum.photos/id/1084/800/600" alt="Image 7 stad"
+					loading="lazy" />
+				<img class="gallery-image" src="https://picsum.photos/id/1080/800/600" alt="Image 8 väg"
+					loading="lazy" />
+			</div>
+		</section>
+	</main>
+
+
+</body>
+
+</html>

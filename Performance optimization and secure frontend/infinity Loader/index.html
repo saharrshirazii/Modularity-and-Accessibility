@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="sv">
+
+<head>
+	<meta charset="UTF-8" />
+	<title>Images</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+	<header class="site-header">
+		<h1>Images</h1>
+		<p>
+			we will load images when they are visible using javascript.
+		</p>
+	</header>
+
+	<main>
+		<section class="profile">
+			<h2>Profile</h2>
+			<p id="greeting"></p>
+			<p id="login-info"></p>
+		</section>
+
+		<section class="gallery">
+			<h2>Image Gallery</h2>
+			<p>
+				A group of images will show here. They are prepared for lazy loading, but the
+				javascript code is missing.
+			</p>
+
+			<div id="imagesDiv" class="gallery-grid">
+			</div>
+			<img class="gallery-image last" src="" alt="Produktbild" style="visibility: hidden;" />
+		</section>
+	</main>
+
+	<script src="script.js"></script>
+</body>
+
+</html>

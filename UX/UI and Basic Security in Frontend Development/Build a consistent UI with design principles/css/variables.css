@@ -1,0 +1,24 @@
+:root{
+    /* color theme */
+    --primary-color: #1A237E;
+    --primary-hover:#206ee1;
+    --secondary-color: #283593;
+    --secondry-hover: #1565C0;
+    --background-color: #fafafa;
+    --color:#424242;
+    --h3-color:#1A237E;
+    /* Typography and spacing */
+    /* font */
+    --font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+    --font-size-base: 14px;
+    --font-size-lg: 16px;
+    --font-size-sm: 10px;
+    /* spacing */
+    --spacing-sm: 8px;
+    --spacing-md: 16px;
+    --spacing-lg: 24px;
+    /* radius */
+    --radius-sm: 8px;
+    --radius-md: 10px;
+    --radius-lg: 12px;
+}
