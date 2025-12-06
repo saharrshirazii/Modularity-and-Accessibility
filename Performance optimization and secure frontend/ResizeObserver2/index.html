@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+
+    <title>Resize Observer</title>
+</head>
+<body>
+<button class="btn btn-primary m-2" id="observe">Observe</button>
+<button class="btn btn-success m-2" id="unobserve">Unobserve</button> 
+<div id="container">
+    <h2 id="title" class="fw-bold">Test Title</h2>
+    <p id="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam, ea quas! At vel optio vitae
+         aliquid cupiditate officia ratione, quo quisquam, adipisci ullam eaque? Animi, commodi similique non
+          at velit atque, sapiente nesciunt ratione eligendi, rem alias aut cum veritatis.
+    </p>
+    <input 
+    type="range"
+    min="300"
+    max="1300"
+    value="500"
+    step="10"
+    id="slider">
+</div>
+
+
+<script src="script.js"></script>
+</body>
+</html>

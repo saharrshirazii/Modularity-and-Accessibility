@@ -1,0 +1,7 @@
+#container{
+    margin: 50 auto;
+    max-width: 90vw;
+    background-color: #eee;
+    border: black 2px solid;
+    padding: 16px;
+}

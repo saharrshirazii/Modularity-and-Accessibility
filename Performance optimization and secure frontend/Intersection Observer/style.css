@@ -1,0 +1,14 @@
+#outer{
+    width: 400px;
+    height: 400px;
+    background-color: lightcoral;
+    margin: 1500px auto;
+    overflow: auto;
+}
+
+#inner{
+    width: 200px;
+    height: 200px;
+    background-color: lightblue;
+    margin: 600px auto;
+}
